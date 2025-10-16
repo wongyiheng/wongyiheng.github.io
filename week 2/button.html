@@ -14,8 +14,6 @@
             margin: 5px 7px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
-            background-color: lightgray;
-            color: black;
         }
 
         a:hover {
@@ -23,28 +21,64 @@
             color: white;
         }
 
-        .row {
+        div.row {
             display: flex;
             padding: 4px 14px;
         }
 
-        .row.top {
+        div.row.top {
             padding-top: 15px;
+        }
+
+        a.request {
+            background-color: #000000;
+            color: white;
+        }
+
+        a.sign {
+            background-color: #56a45b;
+            color: white;
+        }
+
+        a.cart {
+            background-color: #f9da4e;
+            color: #000000
+        }
+
+        a.get {
+            background-color: #7353ad;
+            color: white;
+        }
+
+        a.download {
+            background-color: white;
+            color: #7c8184;
+        }
+
+        a.company {
+            background-color: #2d65bc;
+            color: white;
+        }
+
+        a.save {
+            background-color: white;
+            color: #2d65bc;
+            border: 1px solid #2d65bc;
         }
     </style>
 </head>
 
 <body>
     <div class="row top">
-        <a href="#">Request now</a>
-        <a href="#">Sign Up</a>
-        <a href="#">Add to Cart</a>
+        <a class="request" href="#">Request now</a>
+        <a class="sign up" href="#">Sign up</a>
+        <a class="cart" href="#">Add to Cart</a>
     </div>
     <div class="row bottom">
-        <a href="#">Get Started</a>
-        <a href="#">Download</a>
-        <a href="#">Apply on company website</a>
-        <a href="#">Save</a>
+        <a class="get started" href="#">Get started</a>
+        <a class="download" href="#">Download</a>
+        <a class="company web" href="#">Apply on company website</a>
+        <a class="save" href="#">Save</a>
     </div>
 
 </body>
