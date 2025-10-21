@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <style>
     .container {
@@ -20,36 +23,47 @@
         color: rgb(0, 0, 0);
         padding: 20px;
         margin: 5px;
+        border-radius: 10px;
     }
 
-    .box1 {
-        background-color: rgb(255, 255, 255);
-    }
-
-    .box2 {
-        background-color: rgb(255, 255, 255);
-    }
-
+    .box1,
+    .box2,
     .box3 {
         background-color: rgb(255, 255, 255);
     }
 
+    h2 {
+        font-family: 'Oxygen', sans-serif;
+    }
+
+    p {
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 200;
+    }
+
     body {
         background-color: rgb(220, 220, 220);
+    }
+
+    img {
+        border-radius: 10px;
     }
 </style>
 
 <body>
     <div class="container">
         <div class="box1">
+            <img src="images/building1.jpg" alt="residential project" width="100%">
             <h2>Residential projects</h2>
             <p>We build sustainable and modern homes for comfortable living.</p>
         </div>
         <div class="box2">
+            <img src="images/building2.jpg" alt="commercial project" width="100%">
             <h2>Commercial spaces</h2>
             <p>We create efficient, inspiring workspaces for business of all sizes.</p>
         </div>
         <div class="box3">
+            <img src="images/building3.jpg" alt="infrastructure works" width="100%">
             <h2>Infrastructure works</h2>
             <p>We develop strong, reliable infrastructure for growing communities.</p>
         </div>
