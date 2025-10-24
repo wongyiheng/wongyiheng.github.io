@@ -14,7 +14,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
     }
 
     body {
@@ -49,6 +48,7 @@
         padding: 10px;
         background-color: rgb(255, 255, 255);
         width: 80%;
+        margin-top: 25px;
     }
 
     .box2 .logo {
@@ -74,7 +74,8 @@
     }
 
     .box1,
-    .box2 {
+    .box2,
+    .box3 {
         height: 23px;
     }
 
@@ -84,6 +85,30 @@
         padding: 10px;
         background-color: rgb(255, 255, 255);
         width: 95%;
+        margin-top: 50px;
+    }
+
+    .contact {
+        text-decoration: none;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        padding: 7px 10px;
+        border-radius: 6px;
+        background-color: #f9612b;
+    }
+
+    .tabs a {
+        text-decoration: none;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .tabs :hover {
+        color: #f9612b;
     }
 </style>
 
@@ -101,14 +126,16 @@
         </div>
         <div class="box3">
             <img class="logo" src="images/weblogo.png" alt="weblogo">
-            <h3>Home</h3>
-            <h3>Services</h3>
-            <h3>Work</h3>
-            <h3>Project Details</h3>
-            <h3>Contact</h3>
+            <div class="tabs">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Work</a>
+                <a href="#">Project Details</a>
+                <a href="#">Contact</a>
+            </div>
             <img class="call" src="images/call.png" alt="call">
             <p class="number">555-123-4567</p>
-            <a href="#">Contact</a>
+            <a class="contact" href="#">Contact</a>
         </div>
     </div>
 </body>
