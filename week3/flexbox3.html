@@ -11,16 +11,49 @@
         href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
 </head>
+<style>
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 30px 30px;
+        font-family: 'space grotesk', sans-serif;
+    }
+
+    .tabs a {
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+    }
+
+    .request {
+        padding: 10px 20px;
+        border: solid 1px #191A23;
+        color: black;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    img.home {
+        width: 150px;
+    }
+</style>
 
 <body>
-    <a href="#">
-        <img src="images/home.png" alt="home logo" width="90"> </a>
-    <a href="#">About us</a>
-    <a href="#">Services</a>
-    <a href="#">Use Cases</a>
-    <a href="#">Pricing</a>
-    <a href="#">Blog</a>
-    <a class="request" href="#">Request a quote</a>
+    <div class="header">
+        <a href="#">
+            <img class="home" src="images/home.png" alt="home logo" width="90"> </a>
+        <div class="tabs">
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Use Cases</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+        </div>
+        <a class="request" href="#">Request a quote</a>
+    </div>
 </body>
 
 </html>
