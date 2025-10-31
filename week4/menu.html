@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <style>
-    .box3 {
+    .box1 {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         padding: 10px;
         background-color: rgb(255, 255, 255);
-        width: 97%;
-        margin-top: 50px;
+        margin: 30px;
     }
 
     body {
@@ -24,27 +24,31 @@
     }
 
     img.logo {
-        width: 100px;
+        width: 130px;
+        margin-left: 20px;
     }
 
     img.menu {
         width: 18px;
+        margin-left: 15px;
+        margin-right: 5px;
     }
 
     img.call {
         width: 24px;
+
     }
 
-    .tabs a {
+    .middle a {
         text-decoration: none;
         font-family: 'Oxygen', sans-serif;
-        font-size: 11px;
+        font-size: 12px;
         color: rgb(0, 0, 0);
         font-weight: bold;
         margin: 8px;
     }
 
-    .tabs :hover {
+    .middle :hover {
         color: #f9612b;
     }
 
@@ -57,26 +61,54 @@
         padding: 7px 10px;
         border-radius: 6px;
         background-color: #f9612b;
-        margin-right: 20px;
+    }
+
+    .number {
+        font-family: 'Oxygen', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .right .tel {
+        display: flex;
+        align-items: center;
+    }
+
+    .right .more {
+        display: flex;
+        align-items: center;
     }
 </style>
 
 <body>
-    <div class="box3">
-        <img class="logo" src="images/weblogo.png" alt="weblogo">
-        <div class="tabs">
+    <div class="box1">
+        <div class="left">
+            <img class="logo" src="images/weblogo.png" alt="weblogo">
+        </div>
+        <div class="middle">
             <a href="#">Home</a>
             <a href="#">Services</a>
             <a href="#">Work</a>
             <a href="#">Project Details</a>
             <a href="#">Contact</a>
         </div>
-        <img class="call" src="images/call.png" alt="call">
-        <p class="number">555-123-4567</p>
-        <a class="contact" href="#">Contact</a>
-        <img class="menu" src="images/menu.png" alt="menu">
+        <div class="right">
+            <div class="tel">
+                <img class="call" src="images/call.png" alt="call">
+                <p class="number">555-123-4567</p>
+            </div>
+            <div class="more">
+                <a class="contact" href="#">Contact</a>
+                <img class="menu" src="images/menu.png" alt="menu">
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>
