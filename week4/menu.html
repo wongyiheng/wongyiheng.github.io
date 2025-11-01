@@ -30,7 +30,6 @@
 
     img.menu {
         width: 18px;
-        margin-left: 15px;
         margin-right: 5px;
     }
 
@@ -61,6 +60,7 @@
         padding: 7px 10px;
         border-radius: 6px;
         background-color: #f9612b;
+        margin-right: 20px;
     }
 
     .number {
@@ -83,6 +83,33 @@
     .right .more {
         display: flex;
         align-items: center;
+        gap: 20px;
+    }
+
+    @media screen and (min-width: 200px) {
+        img.menu {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .middle {
+            display: none;
+        }
+
+        .contact {
+            display: none;
+        }
+
+        img.menu {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 648px) {
+        .right .tel {
+            display: none;
+        }
     }
 </style>
 
