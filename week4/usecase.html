@@ -83,12 +83,34 @@
     .content1 {
         display: flex;
         align-items: center;
-        gap: 24px;
-        width: 85%;
+        justify-content: center;
+        width: 83%;
+        gap: 80px;
+        padding: 20px;
+        background-color: #F3F3F3;
+        margin-top: 60px;
+        border-radius: 30px;
     }
 
     .illustration {
-        width: 40%;
+        width: 45%;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    .text .Head {
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    .text .subhead {
+        font-weight: 420;
+        line-height: 1.4;
+        margin-top: 8px;
     }
 </style>
 
@@ -111,8 +133,9 @@
         <div class="content1">
             <img class="illustration" src="images/illustration2.png" alt="illustration">
             <div class="text">
-                <h1>Proven Success Stories</h1>
-                <p>See how our innovative digital marketing<br> strategies have transformed businesses.<br> Whether
+                <p class="Head">Proven Success<br> Stories</p>
+                <p class="subhead">See how our innovative digital marketing<br> strategies have transformed
+                    businesses.<br> Whether
                     through SEO,
                     PPC, social media or<br> web design, these use cases highlight the<br> tangible impact of our work.
                     Explore
