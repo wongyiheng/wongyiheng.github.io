@@ -5,22 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'space grotesk', sans-serif;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .tabs a {
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+    }
+
+    .request {
+        padding: 12px 30px;
+        border: solid 1px #191A23;
+        color: black;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .tabs :hover {
+        padding: 5px 7px;
+        background-color: #B9FF66;
+        border-radius: 8px;
+    }
+</style>
 
 <body>
-    <div class="header">
-        <a href="#">
-            <img class="home" src="images/home.png" alt="home logo"> </a>
-        <div class="tabs">
-            <a href="#">About us</a>
-            <a href="#">Services</a>
-            <a href="#">Use Cases</a>
-            <a href="#">Pricing</a>
-            <a href="#">Blog</a>
+    <div class="container">
+        <div class="header">
+            <a href="#">
+                <img class="home" src="images/home.png" alt="home logo"> </a>
+            <div class="tabs">
+                <a href="#">About us</a>
+                <a href="#">Services</a>
+                <a href="#">Use Cases</a>
+                <a href="#">Pricing</a>
+                <a href="#">Blog</a>
+            </div>
+            <a class="request" href="#">Request a quote</a>
+            <a href="#">
+                <img class="mobmenu" src="images/mobmenu.png" alt="menu"> </a>
         </div>
-        <a class="request" href="#">Request a quote</a>
-        <a href="#">
-            <img class="mobmenu" src="images/mobmenu.png" alt="menu"> </a>
     </div>
 </body>
 
