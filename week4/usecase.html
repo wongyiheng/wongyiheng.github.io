@@ -119,11 +119,74 @@
         justify-content: center;
         width: 83%;
         gap: 80px;
-        padding: 20px;
+        padding: 50px;
         color: #F3F3F3;
         background-color: #191A23;
         margin-top: 60px;
         border-radius: 30px;
+    }
+
+    .point {
+        width: 20px;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .featured {
+        font-size: 30px;
+        font-weight: 550;
+        padding: 2px 6px;
+        border-radius: 5px;
+        color: #191A23;
+        background-color: #B9FF66;
+    }
+
+    .casehead {
+        font-size: 25px;
+        font-weight: 450;
+        margin-top: 20px;
+    }
+
+    .text2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .readmore {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .read {
+        text-decoration: none;
+        color: #B9FF66;
+        font-weight: 300;
+    }
+
+    .text3 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        color: #191A23;
+    }
+
+    .text3 div {
+        width: 30%;
+        padding: 10px;
+        background-color: #F3F3F3;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .percentage {
+        font-size: 30px;
+        font-weight: 700;
     }
 
     @media screen and (min-width: 200px) {
@@ -165,14 +228,17 @@
         </div>
         <div class="content2">
             <div class="text2">
-                <img class="point" src="images/linelogo.png" alt="logo">
-                <p class="featured">Featured Success Story</p>
+                <div class="top"><img class="point" src="images/linelogo.png" alt="logo">
+                    <p class="featured">Featured Success Story</p>
+                </div>
                 <p class="casehead">Scaling Success for a Leading E-commerce Brand</p>
                 <p class="description">Through a comprehensive SEO and PPC strategy, we helped this e-commerce brand
                     increase visibility, drive traffic, and boost sales.</p>
-                <a href="#">
-                    <img class="Arrow" src="images/read.png" alt="more"> </a>
-                <a class="Read" href="#">Read</a>
+                <div class="readmore">
+                    <a href="#">
+                        <img class="Arrow" src="images/read.png" alt="arrow"> </a>
+                    <a class="read" href="#">Read</a>
+                </div>
             </div>
             <div class="text3">
                 <div>
