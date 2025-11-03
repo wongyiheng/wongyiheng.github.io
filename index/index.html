@@ -11,16 +11,51 @@
         href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
 </head>
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background-color: #007883;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 24px;
+        align-items: center;
+    }
+
+    img.logo {
+        width: 40px;
+    }
+
+    .tabs img {
+        width: 26px;
+    }
+
+    .tabs {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+</style>
 
 <body>
-    <a href="#">
-        <img class="logo" src="images/logo.png" alt="logo"> </a>
-    <a class="insta" href="https://www.instagram.com/yihengwong04/" target="_blank">
-        <img src="images/instagram.png" alt="instagram logo"> </a>
-    <a class="fb" href="https://www.facebook.com/yi.h.wong.18/" target="_blank">
-        <img src="images/fb.webp" alt="facebook logo"> </a>
-    <a class="github" href="https://github.com/wongyiheng/wongyiheng.github.io" target="_blank">
-        <img src="images/github.png" alt="github logo"> </a>
+    <div class="container">
+        <div class="header">
+            <a href="#">
+                <img class="logo" src="images/logo.png" alt="logo"> </a>
+            <div class="tabs">
+                <a class="insta" href="https://www.instagram.com/yihengwong04/" target="_blank">
+                    <img src="images/instagram.png" alt="instagram logo"> </a>
+                <a class="fb" href="https://www.facebook.com/yi.h.wong.18/" target="_blank">
+                    <img src="images/fb.png" alt="facebook logo"> </a>
+                <a class="github" href="https://github.com/wongyiheng/wongyiheng.github.io" target="_blank">
+                    <img src="images/github.png" alt="github logo"> </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
