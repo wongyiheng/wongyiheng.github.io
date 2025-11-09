@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'space grotesk', sans-serif;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        padding: 8px;
+    }
+
+    .tabs a {
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+        margin: 20px
+    }
+
+    .tabs {
+        display: flex;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .request {
+        padding: 12px 30px;
+        border: solid 1px #191A23;
+        color: black;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    img.home {
+        width: 160px;
+    }
+
+    .header .home {
+        margin-left: 80px;
+    }
+
+    .header .request {
+        margin-right: 220px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 200px;
+        align-self: flex-start;
+        margin-right: 30px;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+
+    .content .text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .illustration {
+        width: 600px;
+        height: 515px;
+        transform: translateY(20px);
+    }
+
+    .book {
+        padding: 16px 25px;
+        margin-right: auto;
+        color: white;
+        background-color: #191A23;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .content .head {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+
+    .content .subhead {
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    img.platform {
+        display: block;
+        margin-right: 190px;
+        margin-top: 60px;
+        max-width: 90%;
+        height: auto;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#">
+                <img class="home" src="images/home.png" alt="home logo"> </a>
+            <div class="tabs">
+                <a href="#">About us</a>
+                <a href="#">Services</a>
+                <a href="#">Use Cases</a>
+                <a href="#">Pricing</a>
+                <a href="#">Blog</a>
+            </div>
+            <a class="request" href="#">Request a quote</a>
+        </div>
+        <div class="content">
+            <div class="text">
+                <p class="head">Navigating the<br> digital landscape<br> for success</p>
+                <p class="subhead">Our digital marketing agency helps businesses<br> grow and succeed online through a
+                    range
+                    of<br> services
+                    including SEO, PPC, social media marketing,<br> and content creation.</p>
+                <a class="book" href="#">Book a consultation</a>
+            </div>
+            <img class="illustration" src="images/Illustration.png" alt="illustration">
+        </div>
+        <img class="platform" src="images/platform.png" alt="platform">
+    </div>
+</body>
+
+</html>
