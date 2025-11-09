@@ -1,0 +1,119 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f3f3f3;
+}
+
+.container {
+    font-family: 'space grotesk', sans-serif;
+    color: white;
+}
+
+.header {
+    background-color: #007883;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    align-items: center;
+}
+
+img.logo {
+    width: 40px;
+}
+
+.tabs img {
+    width: 26px;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+}
+
+.intro p {
+    width: 60%;
+}
+
+.intro h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.list img {
+    width: 24px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.list a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.week {
+    width: 28%;
+    padding: 20px;
+    background-color: #b0b0b05d;
+    border-radius: 8px;
+    text-align: center;
+    gap: 12px;
+}
+
+.weekfull {
+    width: 93%;
+    padding: 20px;
+    background-color: #b0b0b05d;
+    border-radius: 8px;
+    text-align: center;
+    gap: 12px;
+}
+
+.footer {
+    background-color: #007883;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.footer p {
+    color: white;
+    font-size: 12px;
+    margin: 0;
+}
