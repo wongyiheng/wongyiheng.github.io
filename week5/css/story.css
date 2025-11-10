@@ -158,7 +158,7 @@ img.Arrow {
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
 
     .content1 {
         background-color: white;
@@ -166,7 +166,8 @@ img.Arrow {
         flex-direction: column;
         align-items: center;
         gap: 18px;
-        margin-top: 30px;
+        margin-top: 50px;
+        padding: 0;
     }
 
     .content1 .text {
@@ -176,19 +177,22 @@ img.Arrow {
     .content1 .Head {
         order: 1;
         width: 100%;
+        margin: 0;
         font-weight: 500;
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .content1 .illustration {
         order: 2;
-        width: 90%;
+        width: 100%;
         max-width: 480px;
+        margin: 0;
     }
 
     .content1 .subhead {
         order: 3;
         width: 100%;
+        margin-top: 5px;
     }
 
     img.home {
@@ -199,7 +203,7 @@ img.Arrow {
         display: flex;
         align-items: center;
         flex-direction: column;
-        width: 75%;
+        width: 80%;
         background-color: #191A23;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -217,18 +221,24 @@ img.Arrow {
     .content2 .description {
         font-size: 13px;
         margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .content2 .top,
     .content2 .casehead,
     .content2 .description {
         order: 1;
-        width: 70%;
+        width: 80%;
+        margin-top: 20px;
     }
 
     .content2 .text3 {
         order: 2;
         margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .content2 .readmore {
@@ -243,7 +253,7 @@ img.Arrow {
     }
 
     .text3 div {
-        width: 70%;
+        width: 80%;
     }
 
     img.point {
