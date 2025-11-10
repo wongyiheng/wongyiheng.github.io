@@ -34,6 +34,9 @@
     }
 
     .book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 16px 25px;
         margin-right: auto;
         color: white;
@@ -74,6 +77,63 @@
     .platform img:hover {
         filter: none;
         opacity: 1;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+            margin-top: 50px;
+        }
+
+        .content .text {
+            display: contents;
+        }
+
+        .content .head {
+            order: 1;
+            width: 100%;
+            font-weight: 500;
+            font-size: 40px;
+        }
+
+        .content .illustration {
+            order: 2;
+            width: 100%;
+            max-width: 480px;
+        }
+
+        .content .subhead {
+            order: 3;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .content .book {
+            order: 4;
+            width: 100%;
+        }
+
+        img.home {
+            width: 150px;
+        }
+
+        .platform {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .platform>a {
+            flex: calc(33.333% - 17px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 </style>
 
