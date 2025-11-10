@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 82%;
+    width: 80%;
     gap: 80px;
-    padding: 30px;
+    padding: 50px;
     background-color: #F3F3F3;
-    margin-top: 60px;
+    margin-top: 70px;
     border-radius: 30px;
 }
 
@@ -24,34 +24,29 @@
 .text .Head {
     font-size: 45px;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .text .subhead {
     font-weight: 420;
     line-height: 1.4;
-    margin-top: 8px;
-    width: 70%;
+    margin-top: 40px;
+    width: 82%;
 }
 
 .content2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 82%;
+    width: 80%;
     gap: 40px;
-    padding: 40px;
+    padding: 30px;
     color: #F3F3F3;
     background-color: #191A23;
-    margin-top: 120px;
-    margin-bottom: 80px;
+    margin-top: 110px;
+    margin-bottom: 70px;
     border-radius: 30px;
     min-height: 450px;
-}
-
-.content1,
-.content2 {
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .point {
@@ -84,20 +79,20 @@
     font-size: 26px;
     font-weight: 450;
     width: 65%;
+    margin-top: 40px;
 }
 
 .description {
     font-size: 15px;
     font-weight: 300;
-    margin-top: 15px;
-    width: 82%;
+    margin-top: 40px;
+    width: 80%;
 }
 
 .text2 {
     display: flex;
     flex-direction: column;
     padding-left: 50px;
-    margin-top: -50px;
 }
 
 img.Arrow {
@@ -108,7 +103,7 @@ img.Arrow {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .read {
@@ -120,7 +115,6 @@ img.Arrow {
 
 .text3 {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
     color: #191A23;
@@ -130,34 +124,30 @@ img.Arrow {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: calc(50% - 60px);
     padding: 10px;
     background-color: #F3F3F3;
     border-radius: 8px;
     text-align: center;
-    gap: 12px;
+    gap: 5px;
 }
 
 .percentage {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     margin-top: 30px;
     margin-bottom: 0;
 }
 
 .text3 .key {
-    font-size: 15px;
-    max-width: 70%;
-    margin-top: 0;
+    font-size: 13px;
+    max-width: 60%;
+    margin-top: 0px;
     margin-bottom: 30px;
 
 }
 
 @media screen and (min-width: 200px) {
-
-    img.mobmenu {
-        display: none;
-    }
 
     img.point {
         display: none;
