@@ -14,65 +14,11 @@
     <link rel="stylesheet" href="css/common.css">
 </head>
 <style>
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: 'space grotesk', sans-serif;
-    }
-
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        padding: 8px;
-    }
-
-    .tabs a {
-        text-decoration: none;
-        font-size: 16px;
-        color: black;
-        font-weight: 400;
-        margin: 20px
-    }
-
-    .tabs {
-        display: flex;
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    .request {
-        padding: 12px 30px;
-        border: solid 1px #191A23;
-        color: black;
-        text-decoration: none;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    img.home {
-        width: 160px;
-    }
-
-    .header .home {
-        margin-left: 80px;
-    }
-
-    .header .request {
-        margin-right: 220px;
-    }
-
     .content {
         display: flex;
         align-items: center;
-        gap: 200px;
-        align-self: flex-start;
+        justify-content: center;
+        gap: 80px;
         margin-right: 30px;
         margin-left: 80px;
         margin-top: 10px;
@@ -81,12 +27,13 @@
     .content .text {
         display: flex;
         flex-direction: column;
+        margin-bottom: 70px;
     }
 
     .content .illustration {
-        width: 600px;
-        height: 515px;
-        transform: translateY(20px);
+        width: 45%;
+        margin-right: 100px;
+        margin-bottom: 70px;
     }
 
     .book {
@@ -100,23 +47,26 @@
         margin-top: 20px;
     }
 
-    .content .head {
+    .text .head {
         font-size: 40px;
         font-weight: 500;
-        margin-bottom: 16px;
     }
 
-    .content .subhead {
+    .text .subhead {
         line-height: 24px;
         font-weight: 400;
+        margin-top: 8px;
+        width: 70%;
     }
 
-    img.platform {
-        display: block;
-        margin-right: 190px;
-        margin-top: 60px;
-        max-width: 90%;
-        height: auto;
+    .platform {
+        display: flex;
+        gap: 50px;
+        margin-top: 80px;
+        align-items: center;
+        justify-content: center;
+        width: 82%;
+        margin-bottom: 80px;
     }
 </style>
 
@@ -133,19 +83,34 @@
                 <a href="#">Blog</a>
             </div>
             <a class="request" href="#">Request a quote</a>
+            <a href="#">
+                <img class="mobmenu" src="images/mobmenu.png" alt="menu"> </a>
         </div>
         <div class="content">
             <div class="text">
-                <p class="head">Navigating the<br> digital landscape<br> for success</p>
-                <p class="subhead">Our digital marketing agency helps businesses<br> grow and succeed online through a
+                <p class="head">Navigating the digital landscape for success</p>
+                <p class="subhead">Our digital marketing agency helps businesses grow and succeed online through a
                     range
-                    of<br> services
-                    including SEO, PPC, social media marketing,<br> and content creation.</p>
+                    of services
+                    including SEO, PPC, social media marketing, and content creation.</p>
                 <a class="book" href="#">Book a consultation</a>
             </div>
             <img class="illustration" src="images/Illustration.png" alt="illustration">
         </div>
-        <img class="platform" src="images/platform.png" alt="platform">
+        <div class="platform">
+            <a href="#">
+                <img class="amazon" src="images/amazon.png" alt="amazon logo"> </a>
+            <a href="#">
+                <img class="dribble" src="images/dribble.png" alt="dribble logo"> </a>
+            <a href="#">
+                <img class="hubspot" src="images/hubspot.png" alt="hubspot logo"> </a>
+            <a href="#">
+                <img class="notion" src="images/notion.png" alt="notion logo"> </a>
+            <a href="#">
+                <img class="netflix" src="images/netflix.png" alt="netflix logo"> </a>
+            <a href="#">
+                <img class="zoom" src="images/zoom.png" alt="zoom logo"> </a>
+        </div>
     </div>
 </body>
 
