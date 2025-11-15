@@ -39,13 +39,44 @@
     .articles {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         gap: 30px;
         margin-bottom: 40px;
     }
 
     img {
+        width: 90%;
+    }
+
+    .articles>div {
+        display: flex;
+        width: calc(33.33% - 20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-align: center;
+        padding: 30px 5px;
+        border-radius: 8px;
+        background-color: rgb(239, 239, 239);
+    }
+
+    .text p {
         width: 50%;
+    }
+
+    .text a {
+        text-decoration: none;
+        color: rgb(0, 192, 0)
     }
 </style>
 
@@ -65,21 +96,47 @@
     <div class="articles">
         <div class="sweat1">
             <img src="images/sweat.png" alt="sweat">
-            <p>Creating Streamlined Safeguarding Processes
-                with OneRen</p>
-            <a href="#">Read more</a>
+            <div class="text">
+                <p>Creating Streamlined Safeguarding Processes
+                    with OneRen</p>
+                <a href="#">Read more</a>
+            </div>
         </div>
-        <div class="sweat2">
-            <img src="images/sweat.png" alt="sweat">
-            <p>Creating Streamlined Safeguarding Processes
-                with OneRen</p>
-            <a href="#">Read more</a>
+        <div class="sheesh">
+            <img src="images/sheesh.png" alt="sheesh">
+            <div class="text">
+                <p>What are your safeguarding responsibilities and how can you manage them?</p>
+                <a href="#">Read more</a>
+            </div>
         </div>
-        <div class="sweat3">
-            <img src="images/sweat.png" alt="sweat">
-            <p>Creating Streamlined Safeguarding Processes
-                with OneRen</p>
-            <a href="#">Read more</a>
+        <div class="cinema">
+            <img src="images/cinema.png" alt="cinema">
+            <div class="text">
+                <p>Revamping the Membership Model with Triathlon Australia</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="smart">
+            <img src="images/smart.png" alt="smart">
+            <div class="text">
+                <p>Creating Streamlined Safeguarding Processes
+                    with OneRen</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="shocked">
+            <img src="images/shocked.png" alt="shocked">
+            <div class="text">
+                <p>What are your safeguarding responsibilities and how can you manage them?</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="cat">
+            <img src="images/cat.png" alt="cat">
+            <div class="text">
+                <p>Revamping the Membership Model with Triathlon Australia</p>
+                <a href="#">Read more</a>
+            </div>
         </div>
     </div>
 </body>
