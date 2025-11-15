@@ -95,6 +95,38 @@
         color: rgb(0, 192, 0);
         margin-bottom: 12px;
     }
+
+    @media (max-width: 1024px) {
+        .articles>div {
+            width: calc(50% - 5px);
+        }
+
+        .title p {
+            width: 100%;
+            font-size: 27px;
+        }
+
+        .description {
+            width: 80%;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 648px) {
+        .articles>div {
+            width: 100%;
+        }
+
+        .title p {
+            width: 100%;
+            font-size: 22px;
+        }
+
+        .description {
+            width: 80%;
+            font-size: 14px;
+        }
+    }
 </style>
 
 <body>
