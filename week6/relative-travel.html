@@ -24,17 +24,18 @@
     .main {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 400px;
+        width: 360px;
         background-color: #ffffff;
-        padding: 30px 40px;
+        padding: 20px;
         position: relative;
         left: 100px;
         top: 100px;
+        border-radius: 10px;
     }
 
     .ohio {
-        width: 50%;
+        width: 100%;
+        border-radius: 8px;
     }
 
     .backroom {
@@ -42,40 +43,83 @@
     }
 
     .side {
+        display: flex;
+        align-items: center;
         position: absolute;
         right: -100px;
         bottom: 20px;
-        width: 180px;
+        width: 240px;
         background-color: #ffffff;
-        padding: 20px;
+        padding: 10px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .people {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .fav {
+        margin-left: 100px;
+    }
+
+    .ongoing {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .backroom {
+        position: relative;
+        bottom: 20px;
+        width: 25%;
     }
 </style>
 
 <body>
     <div class="main">
         <img class="ohio" src="images/ohio.png" alt="ohio">
-        <p>Trip to Ohio</p>
-        <p>14-29 Junel by Robbin Jole</p>
-        <div class="icons">
-            <img src="images/eco.png" alt="eco">
-            <img src="images/map.png" alt="map">
-            <img src="images/share.png" alt="share">
-        </div>
-        <div class="people">
-            <img src="images/city.png" alt="city">
-            <p>24 people going</p>
-            <img src="images/fav.png" alt="fav">
-        </div>
-
-        <div class="side">
-            <p>Ongoing</p>
-            <div class="ongoing">
-                <img class="backroom" src="images/backroom.png" alt="backroom">
-                <p>Trip to rome</p>
+        <div class="description">
+            <p>Trip to Ohio</p>
+            <p>14-29 June by Robbin Jole</p>
+            <div class="icons">
+                <img src="images/eco.png" alt="eco">
+                <img src="images/map.png" alt="map">
+                <img src="images/share.png" alt="share">
             </div>
-            <p>40% completed</p>
-            <img src="images/bar.png" alt="bar">
+            <div class="people">
+                <img src="images/city.png" alt="city">
+                <p>24 people going</p>
+                <img class="fav" src="images/fav.png" alt="fav">
+            </div>
+        </div>
+        <div class="side">
+            <img class="backroom" src="images/backroom.png" alt="backroom">
+            <div class="ongoing">
+                <p>Ongoing</p>
+                <p>Trip to rome</p>
+                <p>40% completed</p>
+                <img src="images/bar.png" alt="bar">
+            </div>
         </div>
     </div>
 </body>
