@@ -21,6 +21,13 @@
         background-color: #e9e9e9;
     }
 
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100px;
+    }
+
     .main {
         display: flex;
         flex-direction: column;
@@ -28,8 +35,6 @@
         background-color: #ffffff;
         padding: 20px;
         position: relative;
-        left: 100px;
-        top: 100px;
         border-radius: 10px;
     }
 
@@ -47,7 +52,7 @@
         align-items: center;
         position: absolute;
         right: -100px;
-        bottom: 20px;
+        bottom: 50px;
         width: 240px;
         background-color: #ffffff;
         padding: 10px;
@@ -58,7 +63,8 @@
     .icons {
         display: flex;
         gap: 15px;
-        margin-top: 10px;
+        margin-top: 14px;
+        margin-bottom: 14px;
     }
 
     .people {
@@ -68,16 +74,33 @@
         margin-top: 10px;
     }
 
+    .people p {
+        font-size: 14px;
+        color: #777777;
+    }
+
     .description {
         display: flex;
         flex-direction: column;
         margin-right: auto;
-        gap: 5px;
-        margin-top: 10px;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        letter-spacing: 1.3px;
+        color: #777777;
     }
 
     .fav {
-        margin-left: 100px;
+        margin-left: 130px;
     }
 
     .ongoing {
@@ -86,39 +109,104 @@
         gap: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
+        margin-left: 20px;
     }
 
     .backroom {
         position: relative;
-        bottom: 20px;
+        bottom: 18px;
         width: 25%;
+    }
+
+    .status {
+        font-size: 12px;
+        color: #777777;
+        font-weight: 700;
+    }
+
+    .plan {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .progress {
+        font-size: 12px;
+    }
+
+    .bar {
+        width: 140px;
+    }
+
+    @media (max-width: 1200px) {
+        .container {
+            flex-direction: column;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .side {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            margin-top: 20px;
+        }
     }
 </style>
 
 <body>
-    <div class="main">
-        <img class="ohio" src="images/ohio.png" alt="ohio">
-        <div class="description">
-            <p>Trip to Ohio</p>
-            <p>14-29 June by Robbin Jole</p>
-            <div class="icons">
-                <img src="images/eco.png" alt="eco">
-                <img src="images/map.png" alt="map">
-                <img src="images/share.png" alt="share">
+    <div class="container">
+        <div class="main">
+            <img class="ohio" src="images/ohio.png" alt="ohio">
+            <div class="description">
+                <p class="title">Trip to Ohio</p>
+                <p class="subtitle">14-29 June by Robbin Jole</p>
+                <div class="icons">
+                    <img src="images/eco.png" alt="eco">
+                    <img src="images/map.png" alt="map">
+                    <img src="images/share.png" alt="share">
+                </div>
+                <div class="people">
+                    <img src="images/city.png" alt="city">
+                    <p>24 people going</p>
+                    <img class="fav" src="images/fav.png" alt="fav">
+                </div>
             </div>
-            <div class="people">
-                <img src="images/city.png" alt="city">
-                <p>24 people going</p>
-                <img class="fav" src="images/fav.png" alt="fav">
+            <div class="side">
+                <img class="backroom" src="images/backroom.png" alt="backroom">
+                <div class="ongoing">
+                    <p class="status">Ongoing</p>
+                    <p class="plan">Trip to rome</p>
+                    <p class="progress">40% completed</p>
+                    <img class="bar" src="images/bar.png" alt="bar">
+                </div>
             </div>
         </div>
-        <div class="side">
-            <img class="backroom" src="images/backroom.png" alt="backroom">
-            <div class="ongoing">
-                <p>Ongoing</p>
-                <p>Trip to rome</p>
-                <p>40% completed</p>
-                <img src="images/bar.png" alt="bar">
+
+        <div class="main">
+            <img class="ohio" src="images/ohio.png" alt="ohio">
+            <div class="description">
+                <p class="title">Trip to Ohio</p>
+                <p class="subtitle">14-29 June by Robbin Jole</p>
+                <div class="icons">
+                    <img src="images/eco.png" alt="eco">
+                    <img src="images/map.png" alt="map">
+                    <img src="images/share.png" alt="share">
+                </div>
+                <div class="people">
+                    <img src="images/city.png" alt="city">
+                    <p>24 people going</p>
+                    <img class="fav" src="images/fav.png" alt="fav">
+                </div>
+            </div>
+            <div class="side">
+                <img class="backroom" src="images/backroom.png" alt="backroom">
+                <div class="ongoing">
+                    <p class="status">Ongoing</p>
+                    <p class="plan">Trip to rome</p>
+                    <p class="progress">40% completed</p>
+                    <img class="bar" src="images/bar.png" alt="bar">
+                </div>
             </div>
         </div>
     </div>
