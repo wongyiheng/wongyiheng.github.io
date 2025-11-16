@@ -75,6 +75,7 @@ img.logo {
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
+    margin: 20px;
 }
 
 .list a {
@@ -85,21 +86,12 @@ img.logo {
 }
 
 .week {
-    width: 28%;
+    width: calc(33.33% - 58px);
     padding: 20px;
     background-color: #b0b0b05d;
     border-radius: 8px;
     text-align: center;
-    gap: 12px;
-}
-
-.weekfull {
-    width: 93%;
-    padding: 20px;
-    background-color: #b0b0b05d;
-    border-radius: 8px;
-    text-align: center;
-    gap: 12px;
+    min-height: 180px;
 }
 
 .footer {
@@ -116,4 +108,16 @@ img.logo {
     color: white;
     font-size: 12px;
     margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .list>.week {
+        width: calc(50% - 60px);
+    }
+}
+
+@media (max-width: 648px) {
+    .list>.week {
+        width: 100%;
+    }
 }
