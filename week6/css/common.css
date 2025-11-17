@@ -48,10 +48,11 @@
 
 .submenu a {
     color: black;
-    padding: 12px 16px;
+    padding: 12px;
     text-decoration: none;
     display: block;
     font-size: 14px;
+    width: 150px;
 }
 
 .menu-items:hover .submenu {
@@ -82,8 +83,7 @@ img.home {
     align-items: center;
 }
 
-.tabs :hover {
-    padding: 5px 7px;
+.tabs a:hover {
     background-color: #B9FF66;
     border-radius: 8px;
 }
