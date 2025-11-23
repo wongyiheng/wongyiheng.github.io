@@ -6,19 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        background-color: #8cacd5;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: aliceblue;
+        max-width: 430px;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    div input {
+        margin-bottom: 15px;
+    }
+
+    .name input {
+        width: 200px;
+        border-radius: 10px;
+        min-height: 30px;
+    }
+
+    .personal-info input {
+        width: 200px;
+        border-radius: 10px;
+        min-height: 30px;
+    }
+
+    .website input {
+        width: 100%;
+        border-radius: 10px;
+        min-height: 30px;
+    }
+</style>
 
 <body>
     <form action="/index.html">
         <p>Registration Form</p>
-        <div>
+        <div class="name">
             <input type="text" id="fname" name="fname" placeholder="First name*">
             <input type="text" id="lname" name="lname" placeholder="Last name*">
         </div>
-        <div>
+        <div class="personal-info">
             <input type="date" id="bday" name="bday" placeholder="Date of Birth*">
             <input type="email" id="email" name="email" placeholder="Email*">
         </div>
-        <div>
+        <div class="website">
+            <input type="url" id="website" name="website" placeholder="Your website link">
+        </div>
+        <div class="colors">
             <p>My favorite colors are:</p>
             <input type="checkbox" id="color1" name="color1" value="Green">
             <label for="color1"> Green</label>
@@ -27,7 +68,7 @@
             <input type="checkbox" id="color3" name="color3" value="Red">
             <label for="color3"> Red</label>
         </div>
-        <div>
+        <div class="bio">
             <p><label for="bio">Bio:</label></p>
             <textarea id="bio" name="bio" rows="4"
                 cols="50">Sup! I'm Yi Heng, a passionate multimedia artist. I create engaging and interactive web experiences with a focus on user-centered design and storytelling.</textarea>
