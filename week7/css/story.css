@@ -1,0 +1,270 @@
+.content1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 80px;
+    padding: 50px;
+    background-color: #F3F3F3;
+    margin-top: 70px;
+    border-radius: 30px;
+}
+
+.illustration {
+    width: 45%;
+    margin-left: 100px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+.text .Head {
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.text .subhead {
+    font-weight: 420;
+    line-height: 1.4;
+    margin-top: 40px;
+    width: 82%;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 40px;
+    padding: 30px;
+    color: #F3F3F3;
+    background-color: #191A23;
+    margin-top: 110px;
+    margin-bottom: 70px;
+    border-radius: 30px;
+    min-height: 450px;
+}
+
+.point {
+    width: 20px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.featured {
+    font-size: 35px;
+    font-weight: 550;
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: #191A23;
+    background-color: #B9FF66;
+}
+
+.mobfeatured {
+    font-size: 26px;
+    font-weight: 450;
+    color: #B9FF66;
+    margin: 0;
+}
+
+.casehead {
+    font-size: 26px;
+    font-weight: 450;
+    width: 65%;
+    margin-top: 40px;
+}
+
+.description {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 40px;
+    width: 80%;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+img.Arrow {
+    width: 35px;
+}
+
+.readmore {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 70px;
+}
+
+.read {
+    text-decoration: none;
+    color: #B9FF66;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.text3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    color: #191A23;
+}
+
+.text3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 60px);
+    padding: 10px;
+    background-color: #F3F3F3;
+    border-radius: 8px;
+    text-align: center;
+    gap: 5px;
+}
+
+.percentage {
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.text3 .key {
+    font-size: 13px;
+    max-width: 60%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+}
+
+@media screen and (min-width: 200px) {
+
+    img.point {
+        display: none;
+    }
+
+    .mobfeatured {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .content1 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .content1 .text {
+        display: contents;
+    }
+
+    .content1 .Head {
+        order: 1;
+        width: 100%;
+        margin: 0;
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .content1 .illustration {
+        order: 2;
+        width: 100%;
+        max-width: 480px;
+        margin: 0;
+    }
+
+    .content1 .subhead {
+        order: 3;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    img.home {
+        width: 150px;
+    }
+
+    .content2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        background-color: #191A23;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        gap: 5px;
+    }
+
+    .content2 .text2 {
+        display: contents;
+    }
+
+    .content2 .casehead {
+        font-size: 20px;
+    }
+
+    .content2 .description {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content2 .top,
+    .content2 .casehead,
+    .content2 .description {
+        order: 1;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .content2 .text3 {
+        order: 2;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content2 .readmore {
+        order: 3;
+        width: 70%;
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+    .content2 .read {
+        font-size: 16px;
+    }
+
+    .text3 div {
+        width: 80%;
+    }
+
+    img.point {
+        display: block;
+    }
+
+    .mobfeatured {
+        display: block;
+    }
+
+    .featured {
+        display: none;
+    }
+}
