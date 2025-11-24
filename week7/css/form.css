@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8cacd5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    background-color: aliceblue;
+    max-width: 430px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+div input {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name {
+    display: flex;
+    gap: 10px;
+}
+
+.name input {
+    width: calc(50% - 5px);
+    border-radius: 10px;
+    min-height: 30px;
+    padding-left: 10px;
+}
+
+.personal-info {
+    display: flex;
+    gap: 10px;
+}
+
+.personal-info input {
+    width: calc(50% - 5px);
+    border-radius: 10px;
+    min-height: 30px;
+    padding-left: 10px;
+}
+
+.website input {
+    width: 100%;
+    border-radius: 10px;
+    min-height: 30px;
+    padding-left: 10px;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.colors select {
+    width: 50%;
+    border-radius: 10px;
+    min-height: 30px;
+    padding-left: 10px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bio textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+}
+
+.submit input {
+    width: 100%;
+    min-height: 30px;
+}
